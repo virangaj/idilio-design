@@ -1,13 +1,11 @@
 import React from 'react';
+import ImageSlider from './imgSlide/ImageSlider';
 
 const Home = () => {
 	return (
-		// <div className="sec__one">
-		// 	{/* <h1> Home </h1> */}
-
-		// </div>
 		<div>
-			<h1>hi</h1>
+			{/* <h1>hi</h1> */}
+			<ImageSlider />
 		</div>
 	);
 };

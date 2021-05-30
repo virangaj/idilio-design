@@ -5,6 +5,7 @@ npm i swiper
 npm install react-bootstrap bootstrap@4.6.0
 npm install emailjs-com --save
 npm install react-icons --save
+npm install -g firebase-tools
 
 # Getting Started with Create React App
 

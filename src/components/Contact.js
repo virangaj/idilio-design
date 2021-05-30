@@ -26,18 +26,6 @@ export default function Contact() {
 	}
 
 	return (
-		// <form className="contact-form" onSubmit={sendEmail}>
-		// 	<input type="hidden" name="contact_number" />
-		// 	<label>Name</label>
-		// 	<input type="text" name="name" />
-		// 	<label>Email</label>
-		// 	<input type="email" name="email" />
-		// 	<label>Subject</label>
-		// 	<input type="text" name="subject" />
-		// 	<label>Message</label>c
-		// 	<textarea name="message" />
-		// 	<input type="submit" value="Send" />
-		// </form>
 		<div className="contact1">
 			<div className="container-contact1">
 				<div className="contact1-pic js-tilt" data-tilt>

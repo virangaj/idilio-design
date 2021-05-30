@@ -9,7 +9,6 @@ import BookCover from './components/BookCover';
 import Flyer from './components/Flyer';
 import AlbumCover from './components/AlbumCover';
 
-import Navbarmenu from './components/menu/Navbarmenu';
 import Navigationbar from './components/menu/Navigationbar';
 
 function App() {
@@ -18,8 +17,7 @@ function App() {
 			<Router basename="/">
 				{/* Add Menu Component */}
 
-				{/* <Navigationbar /> */}
-				<Navbarmenu />
+				<Navigationbar />
 
 				<Switch>
 					<Route exact path="/" component={Home} />

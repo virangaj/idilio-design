@@ -1,28 +1,53 @@
 import React from 'react';
+import './Navigation.css';
+import logo from '../../img/logo.png';
+
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 const Navigationbar = () => {
 	return (
-		<Navbar bg="light" expand="lg">
-			<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-			<Navbar.Toggle aria-controls="basic-navbar-nav" />
-			<Navbar.Collapse id="basic-navbar-nav">
-				<Nav className="mr-auto">
-					<Nav.Link href="#home">Home</Nav.Link>
-					<Nav.Link href="#link">Link</Nav.Link>
-					<NavDropdown title="Dropdown" id="basic-nav-dropdown">
-						<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-						<NavDropdown.Item href="#action/3.2">
-							Another action
-						</NavDropdown.Item>
-						<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-						<NavDropdown.Divider />
-						<NavDropdown.Item href="#action/3.4">
-							Separated link
-						</NavDropdown.Item>
-					</NavDropdown>
-				</Nav>
-			</Navbar.Collapse>
-		</Navbar>
+		<div className="header">
+			<Navbar collapseOnSelect expand="lg" variant="dark" className="header">
+				<Navbar.Brand href="/" className="header">
+					<img
+						src={logo}
+						width="100"
+						height="100"
+						className="d-inline-block align-top"
+						alt="React Bootstrap logo"
+					/>{' '}
+				</Navbar.Brand>
+				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+				<Navbar.Collapse id="responsive-navbar-nav">
+					<Nav className="mr-auto header"></Nav>
+					<Nav className="header">
+						<Nav.Link href="/" className="header">
+							Home
+						</Nav.Link>
+						<NavDropdown
+							title="Categories"
+							id="collasible-nav-dropdown"
+							className="header"
+						>
+							<NavDropdown.Item href="/AlbumCover" className="header">
+								Album Cover
+							</NavDropdown.Item>
+							<NavDropdown.Item href="/BookCover" className="header">
+								Book Cover
+							</NavDropdown.Item>
+							<NavDropdown.Item href="/Flyer" className="header">
+								Flyer
+							</NavDropdown.Item>
+						</NavDropdown>
+						<Nav.Link href="/Contact" className="header">
+							Contact
+						</Nav.Link>
+						<Nav.Link href="/About" className="header">
+							About
+						</Nav.Link>
+					</Nav>
+				</Navbar.Collapse>
+			</Navbar>
+		</div>
 	);
 };
 
