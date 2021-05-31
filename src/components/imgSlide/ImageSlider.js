@@ -17,19 +17,19 @@ const ImageSlider = () => {
 				<input type="radio" name="slider" id="s4" />
 				<input type="radio" name="slider" id="s5" />
 				<label for="s1" id="slide1">
-					<img src={image1} height="100%" width="100%" />
+					<img src={image1} height="100%" width="100%" className="sliderImg" />
 				</label>
 				<label for="s2" id="slide2">
-					<img src={image2} height="100%" width="100%" />
+					<img src={image2} height="100%" width="100%" className="sliderImg" />
 				</label>
 				<label for="s3" id="slide3">
-					<img src={image3} height="100%" width="100%" />
+					<img src={image3} height="100%" width="100%" className="sliderImg" />
 				</label>
 				<label for="s4" id="slide4">
-					<img src={image4} height="100%" width="100%" />
+					<img src={image4} height="100%" width="100%" className="sliderImg" />
 				</label>
 				<label for="s5" id="slide5">
-					<img src={image5} height="100%" width="100%" />
+					<img src={image5} height="100%" width="100%" className="sliderImg" />
 				</label>
 			</section>
 		</>
