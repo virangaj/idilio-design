@@ -1,71 +1,71 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import image1 from '../../img/1.png';
-import image2 from '../../img/2.png';
-import image3 from '../../img/3.png';
-import image4 from '../../img/4.png';
+
 // Import Swiper styles
 import 'swiper/swiper.min.css';
-import 'swiper/components/effect-coverflow/effect-coverflow.min.css';
 import 'swiper/components/pagination/pagination.min.css';
 
 import './Carousel.css';
 
 // import Swiper core and required modules
-import SwiperCore, { EffectCoverflow, Pagination } from 'swiper/core';
+import SwiperCore, { Pagination, Autoplay } from 'swiper/core';
 
 // install Swiper modules
-SwiperCore.use([EffectCoverflow, Pagination]);
+SwiperCore.use([Pagination, Autoplay]);
 
-export default function Carousel() {
+export default function Carousel(props) {
 	return (
 		<>
 			<Swiper
-				effect={'coverflow'}
-				grabCursor={true}
-				centeredSlides={true}
-				slidesPerView={'auto'}
+				slidesPerView={1}
+				spaceBetween={10}
 				autoplay={{
 					delay: 2500,
 					disableOnInteraction: false,
 				}}
-				coverflowEffect={{
-					rotate: 50,
-					stretch: 0,
-					depth: 100,
-					modifier: 1,
-					slideShadows: true,
+				pagination={{
+					clickable: true,
 				}}
-				pagination={true}
+				breakpoints={{
+					640: {
+						slidesPerView: 2,
+						spaceBetween: 20,
+					},
+					768: {
+						slidesPerView: 4,
+						spaceBetween: 40,
+					},
+					1024: {
+						slidesPerView: 5,
+						spaceBetween: 50,
+					},
+				}}
 				className="mySwiper"
 			>
 				<SwiperSlide>
-					<img src={image1} />
+					<img src={props.images.image1} alt="Snow" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={image2} />
+					<img src={props.images.image2} alt="Snow" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={image3} />
+					<img src={props.images.image3} alt="Snow" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={image4} />
+					<img src={props.images.image4} alt="Snow" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={image1} />
+					<img src={props.images.image5} alt="Snow" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={image2} />
+					<img src={props.images.image1} alt="Snow" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={image3} />
+					<img src={props.images.image2} alt="Snow" />
 				</SwiperSlide>
 				<SwiperSlide>
-					<img src={image4} />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={image1} />
+					<img src={props.images.image4} alt="Snow" />
 				</SwiperSlide>
 			</Swiper>
 		</>

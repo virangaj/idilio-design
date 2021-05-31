@@ -10,3 +10,11 @@ Navbar {
 .subhead:hover {
 	background-color: #45a29e;
 }
+.tagline {
+	color: #c5c6c7;
+}
+.tagline:hover {
+	color: #c5c6c7;
+	pointer-events: none;
+	cursor: none;
+}
