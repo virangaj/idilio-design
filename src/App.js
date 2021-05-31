@@ -11,6 +11,7 @@ import AlbumCover from './components/AlbumCover';
 import MascotLogo from './components/MascotLogo';
 
 import Navigationbar from './components/menu/Navigationbar';
+import Footer from './components/footer/Footer';
 
 function App() {
 	return (
@@ -29,6 +30,7 @@ function App() {
 					<Route path="/Flyer" component={Flyer} />
 					<Route path="/MascotLogo" component={MascotLogo} />
 				</Switch>
+				<Footer />
 			</Router>
 		</div>
 	);

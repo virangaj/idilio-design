@@ -1,0 +1,25 @@
+.footer {
+	/* position: fixed; */
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #000000;
+	color: #c5c6c7;
+	text-align: center;
+	align-items: center;
+	font-weight: 550;
+	z-index: 1000;
+	padding-top: 1%;
+	padding-bottom: 0.5%;
+}
+.footer p i {
+	color: #c5c6c7;
+	/* font-weight: 650; */
+}
+.footer p a {
+	text-decoration: none;
+	color: #c5c6c7;
+}
+.footer p a:hover {
+	color: #45a29e;
+}
