@@ -6,3 +6,7 @@
 Navbar {
 	background-color: #0b0c10;
 }
+
+.subhead:hover {
+	background-color: #45a29e;
+}

@@ -28,14 +28,17 @@ const Navigationbar = () => {
 							id="collasible-nav-dropdown"
 							className="header"
 						>
-							<NavDropdown.Item href="/AlbumCover" className="header">
+							<NavDropdown.Item href="/AlbumCover" className="header subhead">
 								Album Cover
 							</NavDropdown.Item>
-							<NavDropdown.Item href="/BookCover" className="header">
+							<NavDropdown.Item href="/BookCover" className="header subhead">
 								Book Cover
 							</NavDropdown.Item>
-							<NavDropdown.Item href="/Flyer" className="header">
+							<NavDropdown.Item href="/Flyer" className="header subhead">
 								Flyer
+							</NavDropdown.Item>
+							<NavDropdown.Item href="/MascotLogo" className="header subhead">
+								Mascot Logo
 							</NavDropdown.Item>
 						</NavDropdown>
 						<Nav.Link href="/Contact" className="header">

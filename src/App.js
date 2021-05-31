@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 import BookCover from './components/BookCover';
 import Flyer from './components/Flyer';
 import AlbumCover from './components/AlbumCover';
+import MascotLogo from './components/MascotLogo';
 
 import Navigationbar from './components/menu/Navigationbar';
 
@@ -26,6 +27,7 @@ function App() {
 					<Route path="/BookCover" component={BookCover} />
 					<Route path="/AlbumCover" component={AlbumCover} />
 					<Route path="/Flyer" component={Flyer} />
+					<Route path="/MascotLogo" component={MascotLogo} />
 				</Switch>
 			</Router>
 		</div>

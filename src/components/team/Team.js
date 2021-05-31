@@ -10,6 +10,7 @@ const Team = (props) => {
 	return (
 		<section>
 			<div className="t-card">
+				<span></span>
 				<div className="t-content">
 					<div className="t-imgBx">
 						<img src={props.img} alt="profile1" />
@@ -18,7 +19,7 @@ const Team = (props) => {
 						<h3>
 							{props.name}
 							<br />
-							<span>{props.position}</span>
+							<p>{props.position}</p>
 						</h3>
 					</div>
 				</div>
