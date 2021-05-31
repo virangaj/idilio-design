@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from './carousel/Carousel';
+// import Carousel from './carousel/Carousel';
 import Team from './team/Team';
 import profile1 from '../img/profile1.jpg';
 import profile2 from '../img/profile2.jpg';
@@ -7,6 +7,7 @@ import profile3 from '../img/profile3.jpg';
 import profile4 from '../img/profile4.jpg';
 import profile5 from '../img/profile5.jpg';
 import './team/Team.css';
+
 const About = () => {
 	return (
 		<section className="team-body">

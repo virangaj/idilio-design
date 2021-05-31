@@ -16,6 +16,7 @@ const ImageSlider = () => {
 				<input type="radio" name="slider" id="s3" />
 				<input type="radio" name="slider" id="s4" />
 				<input type="radio" name="slider" id="s5" />
+
 				<label for="s1" id="slide1">
 					<img src={image1} height="100%" width="100%" className="sliderImg" />
 				</label>
@@ -30,6 +31,10 @@ const ImageSlider = () => {
 				</label>
 				<label for="s5" id="slide5">
 					<img src={image5} height="100%" width="100%" className="sliderImg" />
+					<div className="centered">
+						<i className="fas fa-chevron-left left"></i>SEE MORE
+						<i className="fas fa-chevron-right right"></i>
+					</div>
 				</label>
 			</section>
 		</>
