@@ -7,19 +7,36 @@
 	color: #c5c6c7;
 	text-align: center;
 	align-items: center;
-	font-weight: bold;
+	/* font-weight: bold; */
 	z-index: 1000;
 	padding-top: 1%;
 	padding-bottom: 0.5%;
 	font-size: 0.8vw;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	letter-spacing: 1px;
 }
 .footer p i {
 	color: #c5c6c7;
 	/* font-weight: 650; */
 }
 .footer p a {
+	position: relative;
 	text-decoration: none;
 	color: #c5c6c7;
+}
+
+.footer p a:after {
+	content: '';
+	position: absolute;
+	background-color: rgb(131, 0, 92);
+	width: 0%;
+	height: 0.2vh;
+	left: 0;
+	bottom: -8px;
+	transition: 0.5s;
+}
+.footer p a:hover:after {
+	width: 100%;
 }
 .footer p a:hover {
 	color: #45a29e;

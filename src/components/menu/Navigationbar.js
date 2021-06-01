@@ -2,12 +2,13 @@ import React from 'react';
 import './Navigation.css';
 import logo from '../../img/logo.png';
 
-import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 const Navigationbar = () => {
 	return (
 		<div className="header">
-			<Navbar collapseOnSelect expand="lg" variant="dark" className="header">
-				<Navbar.Brand href="/" className="header">
+			<Navbar collapseOnSelect expand="lg" variant="dark">
+				<Navbar.Brand href="/">
 					<img
 						src={logo}
 						width="100"
@@ -21,32 +22,46 @@ const Navigationbar = () => {
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="mr-auto header"></Nav>
 					<Nav className="header">
-						<Nav.Link href="/" className="header">
-							Home
+						<Nav.Link>
+							<Link to="/" className="header underline">
+								Home
+							</Link>
 						</Nav.Link>
 						<NavDropdown
 							title="Categories"
 							id="collasible-nav-dropdown"
 							className="header"
 						>
-							<NavDropdown.Item href="/AlbumCover" className="header subhead">
-								Album Cover
+							<NavDropdown.Item>
+								<Link to="/AlbumCover" className="subhead">
+									Album Cover
+								</Link>
 							</NavDropdown.Item>
-							<NavDropdown.Item href="/BookCover" className="header subhead">
-								Book Cover
+							<NavDropdown.Item>
+								<Link to="/BooKCover" className="subhead">
+									Book Cover
+								</Link>
 							</NavDropdown.Item>
-							<NavDropdown.Item href="/Flyer" className="header subhead">
-								Flyer
+							<NavDropdown.Item>
+								<Link to="/MascotLogo" className="subhead">
+									Mascot Logo
+								</Link>
 							</NavDropdown.Item>
-							<NavDropdown.Item href="/MascotLogo" className="header subhead">
-								Mascot Logo
+							<NavDropdown.Item>
+								<Link to="/Flyers" className="subhead">
+									Flyers
+								</Link>
 							</NavDropdown.Item>
 						</NavDropdown>
-						<Nav.Link href="/Contact" className="header">
-							Contact
+						<Nav.Link>
+							<Link to="/Contact" className="header underline">
+								Contact
+							</Link>
 						</Nav.Link>
-						<Nav.Link href="/About" className="header">
-							About
+						<Nav.Link>
+							<Link to="/About" className="header underline">
+								About
+							</Link>
 						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>

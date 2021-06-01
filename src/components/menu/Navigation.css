@@ -1,16 +1,22 @@
 .header {
-	background-color: #0b0c10;
+	position: relative;
+	background-color: #0b0c1000;
 	font-weight: bold;
-	color: white;
+	color: #a0a0a0;
 }
-Navbar {
-	background-color: #0b0c10;
+.subhead {
+	background-color: #ffffff;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
 }
-
 .subhead:hover {
-	background-color: #45a29e;
+	color: #45a29e;
+
+	background-color: rgba(39, 104, 19, 0);
+	text-decoration: none;
 }
-.tagline {
+/* .tagline {
 	color: #c5c6c7;
 	font-size: 0.7vw;
 }
@@ -18,4 +24,23 @@ Navbar {
 	color: #c5c6c7;
 	pointer-events: none;
 	cursor: none;
+} */
+.header:hover {
+	color: #66fcf1;
+	text-decoration: none;
+	background-color: #45a29d00;
+}
+
+.underline:after {
+	content: '';
+	position: absolute;
+	background-color: #66fcf1;
+	width: 0%;
+	height: 0.2vh;
+	left: 0;
+	bottom: -8px;
+	transition: 0.5s;
+}
+.underline:hover:after {
+	width: 100%;
 }

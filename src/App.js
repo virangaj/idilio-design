@@ -27,7 +27,7 @@ function App() {
 					<Route path="/Contact" component={Contact} />
 					<Route path="/BookCover" component={BookCover} />
 					<Route path="/AlbumCover" component={AlbumCover} />
-					<Route path="/Flyer" component={Flyer} />
+					<Route path="/Flyers" component={Flyer} />
 					<Route path="/MascotLogo" component={MascotLogo} />
 				</Switch>
 				<Footer />

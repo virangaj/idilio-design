@@ -1,5 +1,5 @@
 import React from 'react';
-import Carousel from './carousel/Carousel';
+
 import Team from './team/Team';
 import profile1 from '../img/profile1.jpg';
 import profile2 from '../img/profile2.jpg';

@@ -22,12 +22,15 @@
 .p-container .p-box {
 	position: relative;
 	width: 320px;
-	height: 400px;
+	height: 300px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 40px 30px;
 	transition: 0.5s;
+}
+.p-container .p-box:hover {
+	cursor: pointer;
 }
 .p-container .p-box::before {
 	content: '';
@@ -55,7 +58,6 @@
 	transform: skewX(15deg);
 	transition: 0.5s;
 	filter: blur(30px);
-	transition: 0.5s;
 }
 .p-container .p-box:hover:before,
 .p-container .p-box:hover:after {
@@ -63,7 +65,7 @@
 	left: 20px;
 	width: calc(100% - 90px);
 
-	/* background: linear-gradient(315deg, rgb(17, 178, 253), rgb(1, 219, 92)); */
+	background: linear-gradient(315deg, rgb(17, 178, 253), rgb(1, 219, 92));
 }
 .p-container .p-box::before,
 .p-container .p-box::after {
@@ -114,7 +116,7 @@
 }
 .p-container .p-box:hover span::before {
 	top: -50px;
-	left: 50px;
+	left: 50%;
 	width: 100px;
 	height: 100px;
 	opacity: 1;
@@ -138,7 +140,7 @@
 }
 .p-container .p-box:hover span::after {
 	bottom: -50px;
-	right: 50px;
+	right: 50%;
 	width: 100px;
 	height: 100px;
 	opacity: 1;
