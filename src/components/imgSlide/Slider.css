@@ -78,6 +78,7 @@
 	font-weight: bold;
 	color: aliceblue;
 	z-index: 10;
+	font-size: 1.8vw;
 
 	cursor: pointer;
 	/* transition: 0.5s; */
@@ -93,19 +94,4 @@
 	opacity: 1;
 	transform: translateX(30px);
 	transition: 0.5s;
-}
-@media (max-width: 1000px) {
-	.centered {
-		font-size: 30px;
-	}
-}
-@media (max-width: 800px) {
-	.centered {
-		font-size: 20px;
-	}
-}
-@media (max-width: 500px) {
-	.centered {
-		font-size: 10px;
-	}
 }

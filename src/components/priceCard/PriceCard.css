@@ -36,7 +36,8 @@
 	left: 50px;
 	width: 50%;
 	height: 100%;
-	background: #fff;
+
+	/* background: #fff; */
 	border-radius: 8px;
 	transform: skewX(15deg);
 	transition: 0.5s;
@@ -49,7 +50,7 @@
 	left: 50px;
 	width: 50%;
 	height: 100%;
-	background: #fff;
+	/* background: #fff; */
 	border-radius: 8px;
 	transform: skewX(15deg);
 	transition: 0.5s;
@@ -61,11 +62,16 @@
 	transform: skewX(0);
 	left: 20px;
 	width: calc(100% - 90px);
+
 	/* background: linear-gradient(315deg, rgb(17, 178, 253), rgb(1, 219, 92)); */
 }
 .p-container .p-box::before,
 .p-container .p-box::after {
-	background: linear-gradient(315deg, rgb(17, 178, 253), rgb(1, 219, 92));
+	/* background: linear-gradient(315deg, rgb(17, 178, 253), rgb(1, 219, 92)); */
+	background: linear-gradient(
+		315deg,
+		rgba(212, 212, 212, 0) rgba(1, 219, 92, 0)
+	);
 }
 /* .p-container .p-box:nth-child(1):before,
 .p-container .p-box:nth-child(1):after {
@@ -156,7 +162,7 @@
 	backdrop-filter: blur(10px);
 	z-index: 1;
 	transition: 0.5s;
-	color: #fff;
+	background: rgba(255, 255, 255, 0.05);
 }
 
 .p-container .p-box:hover .p-content {
@@ -173,6 +179,7 @@
 	font-size: 1.1em;
 	margin-bottom: 10px;
 	line-height: 1.4em;
+	color: #fff;
 }
 
 .p-container .p-box .p-content a {

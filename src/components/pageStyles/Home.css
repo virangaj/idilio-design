@@ -1,0 +1,10 @@
+.home-header h1 {
+	font-size: 3vw;
+	color: #c5c6c7;
+	font-weight: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-bottom: -4%;
+}
+.home-header {
+	text-align: center;
+}

@@ -16,7 +16,7 @@ const Navigationbar = () => {
 						alt="React Bootstrap logo"
 					/>{' '}
 				</Navbar.Brand>
-				<Nav.Link className="tagline">The Artistic Elysium</Nav.Link>
+				{/* <Nav.Link className="tagline">The Artistic Elysium</Nav.Link> */}
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="mr-auto header"></Nav>

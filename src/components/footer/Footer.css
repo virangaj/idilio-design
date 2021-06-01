@@ -7,10 +7,11 @@
 	color: #c5c6c7;
 	text-align: center;
 	align-items: center;
-	font-weight: 550;
+	font-weight: bold;
 	z-index: 1000;
 	padding-top: 1%;
 	padding-bottom: 0.5%;
+	font-size: 0.8vw;
 }
 .footer p i {
 	color: #c5c6c7;
@@ -23,3 +24,8 @@
 .footer p a:hover {
 	color: #45a29e;
 }
+/* @media (max-width: 768px) {
+	.footer p .footer p i .footer p a {
+		font-size: 15px;
+	}
+} */

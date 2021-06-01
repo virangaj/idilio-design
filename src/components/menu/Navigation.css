@@ -12,6 +12,7 @@ Navbar {
 }
 .tagline {
 	color: #c5c6c7;
+	font-size: 0.7vw;
 }
 .tagline:hover {
 	color: #c5c6c7;
