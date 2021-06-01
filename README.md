@@ -7,7 +7,7 @@ npm install emailjs-com --save\
 npm install react-icons --save\
 npm install -g firebase-tools\
 npm install react-slick --save\
-npm install slick-carousel --save\
+npm install slick-carousel --save
 
 # Getting Started with Create React App
 
