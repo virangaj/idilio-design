@@ -1,12 +1,18 @@
+.home-header {
+	/* text-align: center; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .home-header h1 {
+	/* margin-left: auto;
+	margin-right: auto; */
+	position: relative;
 	font-size: 3vw;
 	color: #c5c6c7;
 	font-weight: bold;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	margin-bottom: -4%;
-}
-.home-header {
-	text-align: center;
+
+	text-transform: uppercase;
 }
 
 .home-body {
@@ -21,21 +27,30 @@
 .home-body p ul {
 	list-style-type: none;
 	text-align: center;
-	padding-left: 35%;
-	padding-right: 35%;
 }
 
 .home-body p ul li {
+	margin-left: auto;
+	margin-right: auto;
+	width: max-content;
 	font-size: 2vw;
 	font-weight: 900;
 	text-decoration: none;
-	background: linear-gradient(to right, #ccc 50%, #0e7ec9 50%, #0b6ea7);
+	background: linear-gradient(to right, #c5c6c7 50%, #0e7ec9 50%, #0b6ea7);
 	background-size: 200%;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+
+	-o-background-clip: text;
+	-o-text-fill-color: transparent;
+
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
 	transition: 0.5s ease-out;
 }
 
 .home-body p ul li:hover {
 	background-position: -100%;
+	/* cursor: pointer; */
+	cursor: default;
 }

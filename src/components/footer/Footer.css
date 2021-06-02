@@ -3,13 +3,18 @@
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: #000000;
+	background: rgb(11, 12, 16);
+	background: linear-gradient(
+		180deg,
+		rgba(11, 12, 16, 1) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
 	color: #c5c6c7;
 	text-align: center;
 	align-items: center;
 	/* font-weight: bold; */
 	z-index: 1000;
-	padding-top: 1%;
+	padding-top: 2%;
 	padding-bottom: 0.5%;
 	font-size: 0.8vw;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

@@ -1,14 +1,16 @@
 import React from 'react';
 import ImageSlider from './imgSlide/ImageSlider';
 import VerticalSlider from './imgSlide/VerticalSlider';
+
 import './pageStyles/Home.css';
+import { Link } from 'react-router-dom';
+
 const Home = () => {
 	return (
 		<div>
 			<div className="home-header">
 				<h1>The Artistic Elysium</h1>
 			</div>
-
 			<ImageSlider />
 			<VerticalSlider />
 			<div className="home-body">
@@ -21,7 +23,10 @@ const Home = () => {
 					<br />
 					<br />
 					<ul>
-						<li>Book Cover Arts</li>
+						<li>
+							{/* <Link to="/BookCover">Book Cover Arts</Link> */}
+							Book Cover Arts
+						</li>
 						<li>Mixtape Covers</li>
 						<li>Single Covers</li>
 						<li>Logos</li>

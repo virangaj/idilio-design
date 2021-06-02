@@ -82,23 +82,34 @@ iframe {
 .contact1 {
 	width: 100%;
 	min-height: 100%;
-	padding: 15px;
-
+	position: relative;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -moz-box;
 	display: -ms-flexbox;
-	display: flex;
+	display: block;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
-
+.contact1::before {
+	display: block;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-moz-box-shadow: inset 0px 0px 10px 10px #0b0c10;
+	-webkit-box-shadow: inset 0px 0px 10px 10px #0b0c10;
+	box-shadow: inset 0px 0px 10px 10px #0b0c10;
+}
 .container-contact1 {
-	width: 1163px;
-	/* background: #fff; */
+	width: 100%;
+	background-image: url('../../img/contact.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
 	border-radius: 10px;
 	overflow: hidden;
+	background-size: cover;
 
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -115,7 +126,13 @@ iframe {
 /*------------------------------------------------------------------
 [  ]*/
 .contact1-pic {
-	width: 296px;
+	/* width: 50%; */
+	background-image: url('../../img/contact.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 50%;
+	height: 50%;
+	background-size: cover;
 }
 
 .contact1-pic img {
@@ -125,7 +142,7 @@ iframe {
 /*------------------------------------------------------------------
 [  ]*/
 .contact1-form {
-	width: 390px;
+	width: 30%;
 }
 
 .contact1-form-title {
@@ -167,7 +184,7 @@ textarea.input1 + .shadow-input1 {
 .input1 {
 	display: block;
 	width: 100%;
-	background: #0b0c10;
+	background: transparent;
 	font-weight: 700;
 	font-size: 15px;
 	line-height: 1.5;
@@ -187,7 +204,7 @@ textarea.input1 + .shadow-input1 {
 	height: 100%;
 	box-shadow: 0px 0px 0px 0px;
 	color: rgba(70, 148, 184, 0.5);
-	background: #0b0c10;
+	background: transparent;
 }
 
 .input1:focus + .shadow-input1 {
@@ -255,7 +272,7 @@ textarea.input1 + .shadow-input1 {
 
 .contact1-form-btn:hover {
 	background: #66fcf1;
-	color: #0b0c10;
+	color: transparent;
 }
 
 .contact1-form-btn:hover i {

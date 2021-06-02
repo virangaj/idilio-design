@@ -2,7 +2,7 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 import './contactForm/main.css';
 // import './ContactUs.css';
-import image from '../img/img-01.png';
+import image from '../img/contact.jpg';
 export default function Contact() {
 	function sendEmail(e) {
 		e.preventDefault();
@@ -29,11 +29,11 @@ export default function Contact() {
 		<div className="contact1">
 			<div className="container-contact1">
 				<div className="contact1-pic js-tilt" data-tilt>
-					<img src={image} alt="IMG" />
+					{/* <img src={image} alt="IMG" /> */}
 				</div>
 
 				<form className="contact1-form validate-form" onSubmit={sendEmail}>
-					<span className="contact1-form-title">Get in touch</span>
+					<span className="contact1-form-title">Contact us</span>
 
 					<div
 						className="wrap-input1 validate-input"

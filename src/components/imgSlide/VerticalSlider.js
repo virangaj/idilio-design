@@ -8,19 +8,19 @@ const VertiicalSlider = () => {
 			<div className="v-wrap">
 				<div className="v-move">
 					<div className="v-slide">
-						<h3>Slide 1</h3>
+						<h3>Make it simple, but significant</h3>
 					</div>
 					<div className="v-slide">
-						<h3>Slide 2</h3>
+						<h3>Designers are meant to be loved</h3>
 					</div>
 					<div className="v-slide">
-						<h3>Slide 3</h3>
+						<h3>Styles come and go</h3>
 					</div>
 					<div className="v-slide">
-						<h3>Slide 4</h3>
+						<h3>Good design is good business</h3>
 					</div>
 					<div className="v-slide">
-						<h3>Slide 5</h3>
+						<h3>Accessible design is good design</h3>
 					</div>
 				</div>
 			</div>
