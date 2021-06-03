@@ -1,197 +1,140 @@
-.p-page {
-	margin: 0;
-	padding: 0;
+* {
 	box-sizing: border-box;
-	font-family: consolas;
-}
-
-.p-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-}
-.p-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	padding: 40px 0;
-}
-
-.p-container .p-box {
-	position: relative;
-	width: 320px;
-	height: 300px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 40px 30px;
-	transition: 0.5s;
-}
-.p-container .p-box:hover {
-	cursor: pointer;
-}
-.p-container .p-box::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50px;
-	width: 50%;
-	height: 100%;
-
-	/* background: #fff; */
-	border-radius: 8px;
-	transform: skewX(15deg);
-	transition: 0.5s;
-}
-
-.p-container .p-box::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50px;
-	width: 50%;
-	height: 100%;
-	/* background: #fff; */
-	border-radius: 8px;
-	transform: skewX(15deg);
-	transition: 0.5s;
-	filter: blur(30px);
-}
-.p-container .p-box:hover:before,
-.p-container .p-box:hover:after {
-	transform: skewX(0);
-	left: 20px;
-	width: calc(100% - 90px);
-
-	background: linear-gradient(315deg, rgb(17, 178, 253), rgb(1, 219, 92));
-}
-.p-container .p-box::before,
-.p-container .p-box::after {
-	/* background: linear-gradient(315deg, rgb(17, 178, 253), rgb(1, 219, 92)); */
-	background: linear-gradient(
-		315deg,
-		rgba(212, 212, 212, 0) rgba(1, 219, 92, 0)
-	);
-}
-/* .p-container .p-box:nth-child(1):before,
-.p-container .p-box:nth-child(1):after {
-	background: linear-gradient(315deg, rgb(17, 178, 253), rgb(1, 219, 92));
-}
-.p-container .p-box:nth-child(2):before,
-.p-container .p-box:nth-child(2):after {
-	background: linear-gradient(315deg, rgb(159, 0, 165), rrgb(1, 219, 172));
-}
-.p-container .p-box:nth-child(3):before,
-.p-container .p-box:nth-child(3):after {
-	background: linear-gradient(315deg, rgb(175, 214, 0), rrgb(185, 0, 0));
-} */
-
-.p-container .p-box span {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 50;
-	pointer-events: none;
-}
-
-.p-container .p-box span::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border-radius: 8px;
-	background: rgb(255, 255, 255, 0.1);
-	backdrop-filter: blur(10px);
-	opacity: 0;
-	transition: 0.5s;
-	animation: animate 2s ease-in-out infinite;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-.p-container .p-box:hover span::before {
-	top: -50px;
-	left: 50%;
-	width: 100px;
-	height: 100px;
-	opacity: 1;
-}
-
-.p-container .p-box span::after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
-	border-radius: 8px;
-	background: rgb(255, 255, 255, 0.1);
-	backdrop-filter: blur(10px);
-	opacity: 0;
-	transition: 0.5s;
-	animation: animate 2s ease-in-out infinite;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-	animation-delay: -1s;
-}
-.p-container .p-box:hover span::after {
-	bottom: -50px;
-	right: 50%;
-	width: 100px;
-	height: 100px;
-	opacity: 1;
-}
-
-@keyframes animate {
-	0%,
-	100% {
-		transform: translateY(10px);
-	}
-	50% {
-		transform: translateY(-10px);
-	}
-}
-.p-container .p-box .p-content {
-	position: relative;
-	left: 0;
-	padding: 20px 40px;
-	background: rgba(0, 0, 0, 0.05);
-	border-radius: 8px;
-	backdrop-filter: blur(10px);
-	z-index: 1;
-	transition: 0.5s;
-	background: rgba(255, 255, 255, 0.05);
-}
-
-.p-container .p-box:hover .p-content {
-	left: -25px;
-	padding: 60px 70px;
-}
-
-.p-container .p-box .p-content h2 {
-	font-size: 2em;
-	color: #fff;
-	margin-bottom: 10px;
-}
-.p-container .p-box .p-content p {
-	font-size: 1.1em;
-	margin-bottom: 10px;
-	line-height: 1.4em;
-	color: #fff;
-}
-
-.p-container .p-box .p-content a {
-	display: inline-block;
-	font-size: 1.1em;
-	color: #111;
-	background: #fff;
-	padding: 10px;
-	border-radius: 4px;
+	font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	min-height: 100vh;
+
+	align-items: center;
+}
+
+/* .pricing-back {
+	width: 100%;
+	background-image: url('../../img/priceback.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 10px;
+	overflow: hidden;
+	background-size: cover;
+
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	z-index: -100;
+} */
+.pricing-table {
+	padding-top: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 90%;
+	margin: auto;
+}
+
+.pricing-card {
+	flex: 1;
+	max-width: 360px;
+	/* background-color: rgb(97, 97, 97); */
+	/* background: linear-gradient(-45deg, #05c58b, #9de616); */
+	backdrop-filter: blur(10px);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+	background: rgba(105, 105, 105, 0.05);
+
+	margin: 20px 10px;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	color: #ffffff;
+	transition: 0.3s linear;
+	border-radius: 10px;
+}
+.pricing-card ul {
+	text-align: left;
+	padding-left: 10%;
+	letter-spacing: 1px;
+}
+.pricing-card-header {
+	background-color: #45a29e;
+	display: inline-block;
+	color: #fff;
+	padding: 12px 30px;
+	border-radius: 0 0 20px 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: 0.4s linear;
+}
+
+.pricing-card:hover .pricing-card-header {
+	box-shadow: 0 0 0 44em #040505;
+}
+
+.price {
+	font-size: 70px;
+	color: #66fcf1;
+	margin: 2% 0;
+	transition: 0.2s linear;
+}
+
+.price sup,
+.price span {
+	font-size: 22px;
 	font-weight: 700;
-	margin-top: 5px;
+}
+.pricing-card:hover {
+	transform: scale(1.05);
+}
+.pricing-card:hover,
+.pricing-card:hover .price {
+	color: #fff;
+}
+
+.pricing-card li {
+	font-size: 18px;
+	padding: 10px 0;
+	/* text-transform: uppercase; */
+}
+.having {
+	color: #ffffff;
+}
+.nothaving {
+	color: #797979;
+}
+.having i {
+	color: #45a29e;
+}
+.nothaving i {
+	color: #b84141;
+}
+.order-btn {
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-top: 2%;
+	border: 2px solid #45a29e;
+	color: #45a29e;
+	padding: 18px 40px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	font-weight: 500;
+	transition: 0.3s linear;
+}
+
+.order-btn:hover {
+	background-color: #45a29e;
+	color: #fff;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+	.pricing-card {
+		flex: 50%;
+	}
 }

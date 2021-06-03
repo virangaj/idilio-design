@@ -38,7 +38,7 @@ const Navigationbar = () => {
 								</Link>
 							</NavDropdown.Item>
 							<NavDropdown.Item>
-								<Link to="/BooKCover" className="subhead">
+								<Link to="/BookCover" className="subhead">
 									Book Cover
 								</Link>
 							</NavDropdown.Item>

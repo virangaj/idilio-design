@@ -3,7 +3,7 @@ import ImageSlider from './imgSlide/ImageSlider';
 import VerticalSlider from './imgSlide/VerticalSlider';
 
 import './pageStyles/Home.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const Home = () => {
 	return (

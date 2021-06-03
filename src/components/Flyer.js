@@ -1,5 +1,6 @@
 import React from 'react';
 import PriceCard from './priceCard/PriceCard';
+import FlyerPrice from './priceCard/FlyerPrice';
 
 import images from '../img/BookCoverImg';
 import Carousel from './carousel/Carousel';
@@ -9,7 +10,7 @@ const Flyer = () => {
 		<div>
 			<Carousel images={images} />
 
-			<PriceCard />
+			<PriceCard details={FlyerPrice} />
 		</div>
 	);
 };

@@ -8,7 +8,7 @@
 	/* margin-left: auto;
 	margin-right: auto; */
 	position: relative;
-	font-size: 3vw;
+	font-size: 40px;
 	color: #c5c6c7;
 	font-weight: bold;
 
@@ -16,12 +16,12 @@
 }
 
 .home-body {
-	padding: 10%;
+	padding: 5%;
 	text-align: center;
 }
 .home-body p {
 	color: #c5c6c7;
-	font-size: 1.1vw;
+	font-size: 25px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .home-body p ul {
@@ -33,7 +33,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: max-content;
-	font-size: 2vw;
+	font-size: 40px;
 	font-weight: 900;
 	text-decoration: none;
 	background: linear-gradient(to right, #c5c6c7 50%, #0e7ec9 50%, #0b6ea7);
@@ -53,4 +53,22 @@
 	background-position: -100%;
 	/* cursor: pointer; */
 	cursor: default;
+}
+@media screen and (max-width: 1000px) {
+	.home-body p {
+		font-size: 20px;
+	}
+	.home-body p ul li,
+	.home-header h1 {
+		font-size: 35px;
+	}
+}
+@media screen and (max-width: 780px) {
+	.home-body p {
+		font-size: 16px;
+	}
+	.home-body p ul li,
+	.home-header h1 {
+		font-size: 28px;
+	}
 }

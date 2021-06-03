@@ -2,7 +2,7 @@ import React from 'react';
 import emailjs from 'emailjs-com';
 import './contactForm/main.css';
 // import './ContactUs.css';
-import image from '../img/contact.jpg';
+// import image from '../img/contact.jpg';
 export default function Contact() {
 	function sendEmail(e) {
 		e.preventDefault();

@@ -8,7 +8,7 @@
 /* .cards-position {
 	position: relative;
 } */
-.cards-position::before {
+/* .cards-position::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -29,7 +29,7 @@
 	background: linear-gradient(rgb(38, 191, 218), rgb(0, 122, 170));
 	clip-path: circle(20% at 10% 50%);
 	z-index: -10;
-}
+} */
 
 .t-container {
 	position: relative;
@@ -172,4 +172,13 @@
 	width: 100px;
 	height: 100px;
 	opacity: 1;
+}
+@keyframes animate {
+	0%,
+	100% {
+		transform: translateY(10px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
 }

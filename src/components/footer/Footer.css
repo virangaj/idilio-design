@@ -16,9 +16,26 @@
 	z-index: 1000;
 	padding-top: 2%;
 	padding-bottom: 0.5%;
-	font-size: 0.8vw;
+	/* font-size: 0.8vw; */
+
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	letter-spacing: 1px;
+}
+@media screen and (max-width: 1000px) {
+	.footer {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.footer {
+		font-size: 9px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.footer {
+		font-size: 5px;
+	}
 }
 .footer p i {
 	color: #c5c6c7;
