@@ -2,7 +2,7 @@ const BookPrice = [
 	{
 		//---------------basic---------
 		name: 'Basic',
-		price: '24.99',
+		price: 24.99,
 		details: [
 			{
 				className: 'having',
@@ -40,7 +40,7 @@ const BookPrice = [
 	{
 		//---------------Standard---------
 		name: 'Standard',
-		price: '49.99',
+		price: 49.99,
 		details: [
 			{
 				className: 'having',
@@ -78,7 +78,7 @@ const BookPrice = [
 	{
 		//---------------Advance---------
 		name: 'Advance',
-		price: '74.99',
+		price: 74.99,
 		details: [
 			{
 				className: 'having',

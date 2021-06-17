@@ -2,7 +2,7 @@ const MascotPrice = [
 	{
 		//---------------basic---------
 		name: 'Basic',
-		price: '24.99',
+		price: 24.99,
 		details: [
 			{
 				className: 'having',
@@ -36,7 +36,7 @@ const MascotPrice = [
 	{
 		//---------------Standard ---------
 		name: 'Standard ',
-		price: '49.99',
+		price: 49.99,
 		details: [
 			{
 				className: 'having',
@@ -70,7 +70,7 @@ const MascotPrice = [
 	{
 		//---------------Advance ---------
 		name: 'Advance ',
-		price: '74.99',
+		price: 74.99,
 		details: [
 			{
 				className: 'having',
@@ -104,7 +104,7 @@ const MascotPrice = [
 	{
 		//---------------Premium ---------
 		name: 'Premium ',
-		price: '99.99',
+		price: 99.99,
 		details: [
 			{
 				className: 'having',

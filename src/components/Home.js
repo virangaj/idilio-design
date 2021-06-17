@@ -12,6 +12,7 @@ const Home = () => {
 				<h1>The Artistic Elysium</h1>
 			</div>
 			<ImageSlider />
+
 			<VerticalSlider />
 			<div className="home-body">
 				<p>

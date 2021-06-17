@@ -1,5 +1,4 @@
 .team-body {
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
@@ -54,6 +53,26 @@
 	align-items: center;
 	backdrop-filter: blur(10px);
 }
+
+.team-group {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+.team-group img {
+	width: 100%;
+	height: auto;
+}
+.image {
+	background-image: url('../../img/group.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80%;
+	width: 100vw;
+	justify-content: center;
+	display: flex;
+}
+
 .t-container .t-card .t-content {
 	position: relative;
 	display: flex;
@@ -183,12 +202,13 @@
 	}
 }
 .team-description {
-	width: 80%;
-	padding-top: 2%;
+	padding-left: 10%;
+	padding-right: 10%;
 	text-align: center;
 }
 .team-description p {
 	color: #c5c6c7;
+	letter-spacing: 1px;
 	font-size: 25px;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -200,4 +220,14 @@
 	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
+}
+@media screen and (max-width: 1000px) {
+	.team-description p {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 780px) {
+	.team-description p {
+		font-size: 16px;
+	}
 }

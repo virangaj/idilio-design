@@ -2,7 +2,7 @@ const AlbumPrice = [
 	{
 		//---------------basic---------
 		name: 'Basic',
-		price: '24.99',
+		price: 24.99,
 		details: [
 			{
 				className: 'having',
@@ -50,7 +50,7 @@ const AlbumPrice = [
 
 	{
 		name: 'Standard',
-		price: '49.99',
+		price: 49.99,
 		details: [
 			{
 				className: 'having',
@@ -99,7 +99,7 @@ const AlbumPrice = [
 
 	{
 		name: 'Advance',
-		price: '99.99',
+		price: 99.99,
 		details: [
 			{
 				className: 'having',
@@ -147,7 +147,7 @@ const AlbumPrice = [
 
 	{
 		name: 'Premium ',
-		price: '149.99',
+		price: 149.99,
 		details: [
 			{
 				className: 'having',

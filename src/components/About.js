@@ -6,7 +6,7 @@ import profile2 from '../img/profile2.jpg';
 import profile3 from '../img/profile3.jpg';
 import profile4 from '../img/profile4.jpg';
 import profile5 from '../img/profile5.jpg';
-import group from '../img/grouppic.jpg';
+// import group from '../img/group.jpg';
 
 import './team/Team.css';
 
@@ -15,7 +15,8 @@ const About = () => {
 		<>
 			<section className="team-body">
 				<div className="team-group">
-					<img src={group} alt="group" />
+					{/* <img src={group} alt="group" /> */}
+					<div className="image"></div>
 				</div>
 				<div className="team-description">
 					<p>

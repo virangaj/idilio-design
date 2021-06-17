@@ -1,9 +1,9 @@
 import React from 'react';
-import image1 from '../../img/1.jpg';
-import image2 from '../../img/2.jpg';
-import image3 from '../../img/3.jpg';
-import image4 from '../../img/4.jpg';
-import image5 from '../../img/5.jpg';
+import image1 from '../../img/home1.jpg';
+import image2 from '../../img/home2.jpg';
+import image3 from '../../img/home3.jpg';
+import image4 from '../../img/home4.jpg';
+import image5 from '../../img/home5.jpg';
 
 import './Slider.css';
 
@@ -37,7 +37,7 @@ const ImageSlider = () => {
 				</label>
 				<label for="s3" id="slide3">
 					<img
-						src={image3}
+						src={image5}
 						alt="artwork"
 						height="100%"
 						width="100%"
@@ -55,7 +55,7 @@ const ImageSlider = () => {
 				</label>
 				<label for="s5" id="slide5">
 					<img
-						src={image5}
+						src={image3}
 						alt="artwork"
 						height="100%"
 						width="100%"

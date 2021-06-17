@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Gpay from './Gpay';
 import './PriceCard.css';
 
 const PriceCard = (props) => {
-	console.log(props.details);
+	// console.log(props.details);
 	return (
 		<div className="pricing-back">
 			{' '}
@@ -31,9 +31,10 @@ const PriceCard = (props) => {
 							></li>
 						))}
 					</ul>
-					<a href="#" className="order-btn">
+					{/* <a href="#" className="order-btn">
 						Order Now
-					</a>
+					</a> */}
+					<Gpay price={props.details[0].price} />
 				</div>
 
 				<div className="pricing-card">
@@ -57,9 +58,10 @@ const PriceCard = (props) => {
 							></li>
 						))}
 					</ul>
-					<a href="#" className="order-btn">
+					{/* <a href="#" className="order-btn">
 						Order Now
-					</a>
+					</a> */}
+					<Gpay price={props.details[1].price} />
 				</div>
 
 				<div className="pricing-card">
@@ -83,9 +85,10 @@ const PriceCard = (props) => {
 							></li>
 						))}
 					</ul>
-					<a href="#" className="order-btn">
+					{/* <a href="#" className="order-btn">
 						Order Now
-					</a>
+					</a> */}
+					<Gpay price={props.details[2].price} />
 				</div>
 
 				<div className="pricing-card">
@@ -109,9 +112,10 @@ const PriceCard = (props) => {
 							></li>
 						))}
 					</ul>
-					<a href="#" className="order-btn">
+					{/* <a href="#" className="order-btn">
 						Order Now
-					</a>
+					</a> */}
+					<Gpay price={props.details[3].price} />
 				</div>
 			</div>
 		</div>

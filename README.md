@@ -1,13 +1,16 @@
 # Packages Used
 
-npm install react-router-dom   \
+npm install react-router-dom \
 npm i swiper\
 npm install react-bootstrap bootstrap@4.6.0\
 npm install emailjs-com --save\
 npm install react-icons --save\
 npm install -g firebase-tools\
 npm install react-slick --save\
-npm install slick-carousel --save
+npm install slick-carousel --save\
+npm install --save react-spinners\
+npm install slick-carousel --save \
+npm i @google-pay/button-react
 
 # Getting Started with Create React App
 

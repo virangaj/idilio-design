@@ -9,7 +9,11 @@ const Footer = () => {
 				<p>
 					<i className="far fa-copyright"></i> {new Date().getFullYear()}{' '}
 					<a href="/">Idilio Design</a> | All Rights Reserved. Powered by{' '}
-					<a href="http://web-portal.imagezero.net/" target="_blank">
+					<a
+						href="http://web-portal.imagezero.net/"
+						target="_blank"
+						rel="noreferrer"
+					>
 						ImageZero.
 					</a>
 				</p>

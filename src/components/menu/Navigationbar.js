@@ -8,14 +8,16 @@ const Navigationbar = () => {
 	return (
 		<div className="header">
 			<Navbar collapseOnSelect expand="lg" variant="dark">
-				<Navbar.Brand href="/">
-					<img
-						src={logo}
-						width="100"
-						height="100"
-						className="d-inline-block align-top"
-						alt="React Bootstrap logo"
-					/>{' '}
+				<Navbar.Brand>
+					<Link to="/">
+						<img
+							src={logo}
+							width="100"
+							height="100"
+							className="d-inline-block align-top"
+							alt="React Bootstrap logo"
+						/>{' '}
+					</Link>
 				</Navbar.Brand>
 				{/* <Nav.Link className="tagline">The Artistic Elysium</Nav.Link> */}
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
